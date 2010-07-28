@@ -54,6 +54,13 @@ static void ortho_basis(GLfloat *out_x, GLfloat *out_y, GLfloat const *normal)
     vec_cross(out_y, normal, out_x);
 }
 
+static const GLfloat IDENTITY_MATRIX[16] = {
+    1.0f, 0.0f, 0.0f, 0.0f,
+    0.0f, 1.0f, 0.0f, 0.0f,
+    0.0f, 0.0f, 1.0f, 0.0f,
+    0.0f, 0.0f, 0.0f, 1.0f
+};
+
 #ifndef M_PI
 #define M_PI 3.141592653589793
 #endif
